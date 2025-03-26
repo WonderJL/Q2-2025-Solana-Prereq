@@ -7,6 +7,7 @@
     "keygen": "ts-node ./keygen.ts",
     "airdrop": "ts-node ./airdrop.ts",
     "transfer": "ts-node ./transfer.ts",
+    "cleanUpWallet": "ts-node ./cleanUpWallet.ts",
     "enroll": "ts-node ./enroll.ts",
     "base58ToByteArray": "ts-node ./helper/base58ToByteArray.ts",
     "byteArrayToBase58": "ts-node ./helper/byteArrayToBase58.ts"
