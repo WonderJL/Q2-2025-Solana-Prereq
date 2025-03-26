@@ -40,3 +40,6 @@ test-ledger/
 
 # dev
 .local-refs
+
+# wallet
+*wallet.json
