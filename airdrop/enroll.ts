@@ -20,8 +20,6 @@ const provider = new AnchorProvider(connection, new Wallet(keypair), {
 // Create the program instance
 const program: Program<Turbin3Prereq> = new Program(IDL, provider);
 
-console.log("program.programId", program.programId);
-
 const enrollmentSeeds = [
   Buffer.from("preQ225"), // This should match the program's expected seed
   keypair.publicKey.toBuffer()
