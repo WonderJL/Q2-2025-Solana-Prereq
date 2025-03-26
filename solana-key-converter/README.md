@@ -24,24 +24,34 @@ A command-line interface (CLI) tool written in Rust to convert between Base58-en
    cd Q2-2025-Solana-Prereq/solana-key-converter
    ```
 
-2. Build the project:
-
-   ```bash
-   cargo build --release
-   ```
-
-3. The binary will be available at:
-
-   ```bash
-   target/release/solana-key-converter
-   ```
-
 ## 💻 Usage
 
-### Base58 to Wallet Conversion
+1. You can either build the project or install it globally:
+
+Option 1 - Build the project:
 
 ```bash
-./target/release/solana-key-converter base58-to-wallet
+cargo build --release
+ ```
+
+The binary will be available at:
+
+```bash
+target/release/solana-key-converter
+ ```
+
+Option 2 - Install globally:
+
+```bash
+cargo install --path .
+ ```
+
+This will install the binary to your cargo bin directory ( ~/.cargo/bin ).
+
+### Base58 to byte-array Conversion
+
+```bash
+./target/release/solana-key-converter base58-to-byte-array
 ```
 
 **Example:**
@@ -50,10 +60,10 @@ A command-line interface (CLI) tool written in Rust to convert between Base58-en
 Enter your Base58 private key: 5MaiiCavjCmn9Hs1o3eznqDEhRwxo7pXiAYez7keQUviUkauRiTMD8DrESdrNjN8zd9mTmVhRvBJeg5vhyvgrAhG
 ```
 
-### Wallet to Base58 Conversion
+### byte-array to Base58 Conversion
 
 ```bash
-./target/release/solana-key-converter wallet-to-base58
+./target/release/solana-key-converter byte-array-to-base58
 ```
 
 **Example:**

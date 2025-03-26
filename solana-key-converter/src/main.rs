@@ -14,16 +14,16 @@ struct Cli {
 #[derive(Subcommand)]
 enum Commands {
     /// Convert a Base58 string to a wallet byte array
-    Base58ToWallet,
+    Base58ToByteArray,
     /// Convert a wallet byte array to a Base58 string
-    WalletToBase58,
+    ByteArrayToBase58,
 }
 
 fn main() -> Result<()> {
     let cli = Cli::parse();
 
     match cli.command {
-        Commands::Base58ToWallet => {
+        Commands::Base58ToByteArray => {
             print!("Enter your Base58 private key: ");
             io::stdout().flush()?;
             let mut base58 = String::new();
@@ -35,7 +35,7 @@ fn main() -> Result<()> {
                 Err(e) => eprintln!("Invalid Base58 string: {}", e),
             }
         }
-        Commands::WalletToBase58 => {
+        Commands::ByteArrayToBase58 => {
             print!("Enter your byte array (comma-separated numbers): ");
             io::stdout().flush()?;
             let mut input = String::new();
