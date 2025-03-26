@@ -13,6 +13,7 @@
     "byteArrayToBase58": "ts-node ./helper/byteArrayToBase58.ts"
   },
   "dependencies": {
+    "@coral-xyz/anchor": "^0.31.0",
     "@solana/web3.js": "^1.75.0",
     "@types/node": "^18.15.11",
     "bs58": "^6.0.0",
