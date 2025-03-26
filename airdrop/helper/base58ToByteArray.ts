@@ -5,7 +5,7 @@ import promptSync from "prompt-sync";
 const prompt = promptSync({ sigint: true });
 
 // Function to convert Base58 to byte array (like `base58_to_wallet`)
-function base58ToWallet() {
+function base58ToByteArray() {
   console.log("Enter your Base58 Wallet Address:");
   const base58 = prompt("> "); // Example: gdtKSTXYULQNx87fdD3YgXkzVeyFeqwtxHm6WdEb5a9YJRnHse7GQr7t5pbepsyvUCk7VvksUGhPt4SZ8JHVSkt
   try {
@@ -20,5 +20,5 @@ function base58ToWallet() {
   }
 }
 
-console.log("=== Base58 to Wallet ===");
-base58ToWallet();
+console.log("=== Base58 to Byte Array ===");
+base58ToByteArray();
