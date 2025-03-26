@@ -7,9 +7,15 @@ yarn-error.log*
 dist/
 *.tsbuildinfo
 
+# Rust
+debug/
+target/
+**/*.rs.bk
+*.pdb
+Cargo.lock
+
 # Solana
 .anchor
-target/
 test-ledger/
 
 # Environment variables

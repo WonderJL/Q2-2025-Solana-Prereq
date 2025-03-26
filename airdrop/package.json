@@ -7,14 +7,19 @@
     "keygen": "ts-node ./keygen.ts",
     "airdrop": "ts-node ./airdrop.ts",
     "transfer": "ts-node ./transfer.ts",
-    "enroll": "ts-node ./enroll.ts"
+    "enroll": "ts-node ./enroll.ts",
+    "base58ToWallet": "ts-node ./helper/base58ToWallet.ts",
+    "walletToBase58": "ts-node ./helper/walletToBase58.ts"
   },
   "dependencies": {
     "@solana/web3.js": "^1.75.0",
     "@types/node": "^18.15.11",
+    "bs58": "^6.0.0",
+    "prompt-sync": "^4.2.0",
     "typescript": "^5.0.4"
   },
   "devDependencies": {
+    "@types/prompt-sync": "^4.2.3",
     "ts-node": "^10.9.1"
   }
 }
